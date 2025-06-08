@@ -16,15 +16,15 @@ public class Animales {
 	}
 
 	@Override
-	public boolean equals(Object o) {
+	public boolean equals(Object objeto) {
 	    // Se compara con el mismo (el objeto)
-	    if (this == o) return true;
+	    if (this == objeto) return true;
 
 	    // Aqui lo que se verifica es si el objeto es nulo o de otra clase
-	    if (o == null || getClass() != o.getClass()) return false;
+	    if (objeto == null || getClass() != objeto.getClass()) return false;
 	    
 	    // Lo convierto a Animal porque ya sé que es seguro
-	    Animales animal = (Animales) o;
+	    Animales animal = (Animales) objeto;
 
 	    // Se comparan los IDS
 	    return this.id.equals(animal.id);
